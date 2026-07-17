@@ -1,0 +1,189 @@
+/*=========================================
+            NAVBAR
+=========================================*/
+
+.navbar{
+
+    position:fixed;
+
+    top:18px;
+
+    left:50%;
+    color:#2D2D2D;
+
+    transform:translateX(-50%);
+
+
+    width:88%;
+
+    z-index:999;
+
+}
+
+.navbar-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 35px;
+
+    border-radius:70px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 10px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+/*================ Logo ================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    color:white;
+
+}
+
+.logo-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#D4AF37;
+
+    font-size:20px;
+
+}
+
+.logo-text h2{
+
+    margin:0;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+.logo-text span{
+
+    display:block;
+
+    color:#ddd;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+}
+
+/*================ Menu ================*/
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:45px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    font-weight:500;
+
+    position:relative;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-7px;
+
+    width:0;
+
+    height:2px;
+
+    background:#D4AF37;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after,
+
+.nav-links .active::after{
+
+    width:100%;
+
+}
+
+/*================ Button ================*/
+
+.navbar .btn-primary{
+
+    padding:14px 28px;
+
+}
+
+.navbar .btn-primary i{
+
+    margin-left:8px;
+
+    transition:.3s;
+
+}
+
+.navbar .btn-primary:hover i{
+
+    transform:translateX(5px);
+
+}
+
+/*================ Mobile ================*/
+
+.menu-btn{
+
+    display:none;
+
+    font-size:26px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
