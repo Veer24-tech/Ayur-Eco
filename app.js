@@ -53,7 +53,5 @@ app.use((req, res) => {
 // ===============================
 
 app.listen(PORT, () => {
-
-    console.log(`🚀 Server Running → http://localhost:${PORT}`);
-
+    console.log(`Server Running on Port ${PORT}`);
 });
